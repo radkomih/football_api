@@ -1,4 +1,3 @@
-require 'pry'
 require 'football_api/configuration'
 require 'football_api/status'
 require 'football_api/timezone'
