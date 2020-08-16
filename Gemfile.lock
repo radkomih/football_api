@@ -27,7 +27,7 @@ PLATFORMS
 
 DEPENDENCIES
   football_api!
-  rake (~> 12.0)
+  rake (~> 12.3)
   rspec (~> 3.0)
 
 BUNDLED WITH
