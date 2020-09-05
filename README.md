@@ -123,8 +123,14 @@ FootballApi::Odds::Label.find(1)
 
 FootballApi::Odds::Mapping.all(page: 2)
 
-FootballApi::Odds::Odd.all_by_fixture(1066)
-FootballApi::Odds::Odd.all_by_date(date)
+FootballApi::Odds::Odd.all_by_fixture(569725)
+FootballApi::Odds::Odd.all_by_date(date, page: 2)
+FootballApi::Odds::Odd.all_by_date_and_bookmaker(date, 9)
+FootballApi::Odds::Odd.all_by_fixture_and_bookmaker(608277, 9)
+FootballApi::Odds::Odd.all_by_fixture_and_label(608277, 1)
+FootballApi::Odds::Odd.all_by_league(1334, page: 2)
+FootballApi::Odds::Odd.all_by_league_and_bookmaker(1334, 9)
+FootballApi::Odds::Odd.all_by_league_and_label(1334, 1)
 ```
 
 ## TODO
