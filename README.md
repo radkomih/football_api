@@ -122,6 +122,9 @@ FootballApi::Odds::Label.all
 FootballApi::Odds::Label.find(1)
 
 FootballApi::Odds::Mapping.all(page: 2)
+
+FootballApi::Odds::Odd.all_by_fixture(1066)
+FootballApi::Odds::Odd.all_by_date(date)
 ```
 
 ## TODO
