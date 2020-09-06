@@ -1,137 +1,135 @@
 # FootballApi
 
-API client for https://www.api-football.com v2.3.9
+API client for https://www.api-football.com - v2.3.9
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-```ruby
-gem 'football_api'
-```
+`gem 'football_api'`
 
 And then execute:
 
-    $ bundle install
+`$ bundle install`
 
 Or install it yourself as:
 
-    $ gem install football_api
+`$ gem install football_api`
 
 ## Usage
 
-```ruby
+```
 FootballApi.configure do |config|
   config.api_key = 'XXXXXXXXXXXXXXXXXXXXXXXXX'
   config.api_host = 'https://www.api-football.com/demo/v2/'
 end
+```
 
-date = Time.now.strftime("%Y-%m-%d")
+[FootballApi::Status.info](https://www.api-football.com/documentation#status-requests)
 
-FootballApi::Status.info
+[FootballApi::Timezone.all](https://www.api-football.com/documentation#timezone-requests)
 
-FootballApi::Timezone.all
+[FootballApi::Season.all](https://www.api-football.com/documentation#seasons-requests)
 
-FootballApi::Season.all
+[FootballApi::Country.all](https://www.api-football.com/documentation#countries-requests)
 
-FootballApi::Country.all
 
-FootballApi::League.find(357)
+FootballApi::League.find
 FootballApi::League.all
-FootballApi::League.all_by_team(15)
-FootballApi::League.all_by_team_and_season(15, 2019)
-FootballApi::League.search('World')
-FootballApi::League.all_by_country('Netherlands')
-FootballApi::League.all_by_country_and_season('Brazil', 2019)
-FootballApi::League.all_by_code('BR')
-FootballApi::League.all_by_code_and_season('BR', 2019)
-FootballApi::League.all_by_season(2019)
-FootballApi::League.all_seasons_by_league(357)
-FootballApi::League.all_by_league_and_season(357, 2019)
+FootballApi::League.all_by_team
+FootballApi::League.all_by_team_and_season
+FootballApi::League.search
+FootballApi::League.all_by_country
+FootballApi::League.all_by_country_and_season
+FootballApi::League.all_by_code
+FootballApi::League.all_by_code_and_season
+FootballApi::League.all_by_season
+FootballApi::League.all_seasons_by_league
+FootballApi::League.all_by_league_and_season
 FootballApi::League.all_current
-FootballApi::League.all_current_by_country('BR')
-FootballApi::League.all_by_type('cup')
-FootballApi::League.all_by_type_and_country('cup', 'Brazil')
-FootballApi::League.all_by_type_and_country_and_season('cup', 'Brazil', 2019)
-FootballApi::League.all_by_type_and_season('cup', 2019)
+FootballApi::League.all_current_by_country
+FootballApi::League.all_by_type
+FootballApi::League.all_by_type_and_country
+FootballApi::League.all_by_type_and_country_and_season
+FootballApi::League.all_by_type_and_season
 
-FootballApi::Teams::Data.find(15)
-FootballApi::Teams::Data.all_by_league(357)
-FootballApi::Teams::Data.search('Brazil')
+FootballApi::Teams::Data.find
+FootballApi::Teams::Data.all_by_league
+FootballApi::Teams::Data.search
 
-FootballApi::Teams::Statistic.all_by_league_and_team(357, 15)
+FootballApi::Teams::Statistic.all_by_league_and_team
 
-FootballApi::Teams::Statistic.all_by_league_and_team_and_date(1, 15, date)
+FootballApi::Teams::Statistic.all_by_league_and_team_and_date
 
-FootballApi::Standing.all_by_league(357)
+FootballApi::Standing.all_by_league
 
-FootballApi::Fixtures::Round.all_by_league(357)
-FootballApi::Fixtures::Round.all_by_league_and_current(357)
+FootballApi::Fixtures::Round.all_by_league
+FootballApi::Fixtures::Round.all_by_league_and_current
 
-FootballApi::Fixtures::Fixture.find(111)
+FootballApi::Fixtures::Fixture.find
 FootballApi::Fixtures::Fixture.all_live
-FootballApi::Fixtures::Fixture.all_live_and_several_leagues(357, 524)
-FootballApi::Fixtures::Fixture.all_by_date(date)
-FootballApi::Fixtures::Fixture.all_by_league(357)
-FootballApi::Fixtures::Fixture.all_by_league_and_date(357, date)
-FootballApi::Fixtures::Fixture.all_by_league_and_round(357, 1)
-FootballApi::Fixtures::Fixture.next_n_by_league(357, 10)
-FootballApi::Fixtures::Fixture.last_n_by_league(357, 10)
+FootballApi::Fixtures::Fixture.all_live_and_several_leagues
+FootballApi::Fixtures::Fixture.all_by_date
+FootballApi::Fixtures::Fixture.all_by_league
+FootballApi::Fixtures::Fixture.all_by_league_and_date
+FootballApi::Fixtures::Fixture.all_by_league_and_round
+FootballApi::Fixtures::Fixture.next_n_by_league
+FootballApi::Fixtures::Fixture.last_n_by_league
 
-FootballApi::Fixtures::H2h.all_by_team(1, 15)
+FootballApi::Fixtures::H2h.all_by_team
 
-FootballApi::Fixtures::Statistic.all_by_fixture(316)
+FootballApi::Fixtures::Statistic.all_by_fixture
 
-FootballApi::Fixtures::Event.all_by_fixture(316)
+FootballApi::Fixtures::Event.all_by_fixture
 
-FootballApi::Fixtures::Lineup.all_by_fixture(316)
+FootballApi::Fixtures::Lineup.all_by_fixture
 
-FootballApi::Prediction.all_by_fixture(316)
+FootballApi::Prediction.all_by_fixture
 
-FootballApi::Coach.find(316)
-FootballApi::Coach.all_by_team(15)
-FootballApi::Coach.search('aaaa')
+FootballApi::Coach.find
+FootballApi::Coach.all_by_team
+FootballApi::Coach.search
 
 FootballApi::Players::Season.all
 
-FootballApi::Players::TopScorer.all_by_league(357)
+FootballApi::Players::TopScorer.all_by_league
 
-FootballApi::Players::Search.all_by_name('Frog')
+FootballApi::Players::Search.all_by_name
 
-FootballApi::Players::Squad.all_by_team_and_season(15, 2019)
+FootballApi::Players::Squad.all_by_team_and_season
 
-FootballApi::Players::StatisticsSeason.all_by_player(1)
-FootballApi::Players::StatisticsSeason.all_by_player_and_season(1, 2019)
-FootballApi::Players::StatisticsSeason.all_by_team_and_season(15, 2019)
+FootballApi::Players::StatisticsSeason.all_by_player
+FootballApi::Players::StatisticsSeason.all_by_player_and_season
+FootballApi::Players::StatisticsSeason.all_by_team_and_season
 
-FootballApi::Players::StatisticsFixture.by_fixture(111)
+FootballApi::Players::StatisticsFixture.by_fixture
 
-FootballApi::Transfer.all_by_player(452)
-FootballApi::Transfer.all_by_team(11)
+FootballApi::Transfer.all_by_player
+FootballApi::Transfer.all_by_team
 
-FootballApi::Trophey.all_by_player(276)
-FootballApi::Trophey.all_by_coach(2)
+FootballApi::Trophey.all_by_player
+FootballApi::Trophey.all_by_coach
 
-FootballApi::Sideline.all_by_player(276)
-FootballApi::Sideline.all_by_coach(2)
+FootballApi::Sideline.all_by_player
+FootballApi::Sideline.all_by_coach
 
 FootballApi::Odds::Bookmaker.all
-FootballApi::Odds::Bookmaker.find(1)
+FootballApi::Odds::Bookmaker.find
 
 FootballApi::Odds::Label.all
-FootballApi::Odds::Label.find(1)
+FootballApi::Odds::Label.find
 
-FootballApi::Odds::Mapping.all(page: 2)
+FootballApi::Odds::Mapping.all
 
-FootballApi::Odds::Odd.all_by_fixture(569725)
-FootballApi::Odds::Odd.all_by_date(date, page: 2)
-FootballApi::Odds::Odd.all_by_date_and_bookmaker(date, 9)
-FootballApi::Odds::Odd.all_by_fixture_and_bookmaker(608277, 9)
-FootballApi::Odds::Odd.all_by_fixture_and_label(608277, 1)
-FootballApi::Odds::Odd.all_by_league(1334, page: 2)
-FootballApi::Odds::Odd.all_by_league_and_bookmaker(1334, 9)
-FootballApi::Odds::Odd.all_by_league_and_label(1334, 1)
-```
+FootballApi::Odds::Odd.all_by_fixture
+FootballApi::Odds::Odd.all_by_date
+FootballApi::Odds::Odd.all_by_date_and_bookmaker
+FootballApi::Odds::Odd.all_by_fixture_and_bookmaker
+FootballApi::Odds::Odd.all_by_fixture_and_label
+FootballApi::Odds::Odd.all_by_league
+FootballApi::Odds::Odd.all_by_league_and_bookmaker
+FootballApi::Odds::Odd.all_by_league_and_label
+
 
 ## TODO
 
