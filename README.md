@@ -18,6 +18,8 @@ Or install it yourself as:
 
 ## Usage
 
+### Configuration
+
 ```
 FootballApi.configure do |config|
   config.api_key = 'XXXXXXXXXXXXXXXXXXXXXXXXX'
@@ -25,15 +27,29 @@ FootballApi.configure do |config|
 end
 ```
 
-[FootballApi::Status.info](https://www.api-football.com/documentation#status-requests)
+### Resources
+[Status](https://www.api-football.com/documentation#status-requests)
+```
+FootballApi::Status.info
+```
 
-[FootballApi::Timezone.all](https://www.api-football.com/documentation#timezone-requests)
+[Timezones](https://www.api-football.com/documentation#timezone-requests)
+```
+FootballApi::Timezone.all
+```
 
-[FootballApi::Season.all](https://www.api-football.com/documentation#seasons-requests)
+[Seasons](https://www.api-football.com/documentation#seasons-requests)
+```
+FootballApi::Season.all
+```
 
-[FootballApi::Country.all](https://www.api-football.com/documentation#countries-requests)
+[Contries](https://www.api-football.com/documentation#countries-requests)
+```
+FootballApi::Country.all
+```
 
-
+[Leagues](https://www.api-football.com/documentation#leagues-requests)
+```
 FootballApi::League.find
 FootballApi::League.all
 FootballApi::League.all_by_team
@@ -52,20 +68,34 @@ FootballApi::League.all_by_type
 FootballApi::League.all_by_type_and_country
 FootballApi::League.all_by_type_and_country_and_season
 FootballApi::League.all_by_type_and_season
+```
 
+[Teams](https://www.api-football.com/documentation#teams-data-requests)
+```
 FootballApi::Teams::Data.find
 FootballApi::Teams::Data.all_by_league
 FootballApi::Teams::Data.search
+```
 
+[Team Statistics](https://www.api-football.com/documentation#teams-statistics-requests)
+```
 FootballApi::Teams::Statistic.all_by_league_and_team
-
 FootballApi::Teams::Statistic.all_by_league_and_team_and_date
+```
 
+[Standings](https://www.api-football.com/documentation#standings-requests)
+```
 FootballApi::Standing.all_by_league
+```
 
+[Rounds](https://www.api-football.com/documentation#fixtures-rounds-requests)
+```
 FootballApi::Fixtures::Round.all_by_league
 FootballApi::Fixtures::Round.all_by_league_and_current
+```
 
+[Fixtures](https://www.api-football.com/documentation#fixtures-fixtures-requests)
+```
 FootballApi::Fixtures::Fixture.find
 FootballApi::Fixtures::Fixture.all_live
 FootballApi::Fixtures::Fixture.all_live_and_several_leagues
@@ -75,52 +105,109 @@ FootballApi::Fixtures::Fixture.all_by_league_and_date
 FootballApi::Fixtures::Fixture.all_by_league_and_round
 FootballApi::Fixtures::Fixture.next_n_by_league
 FootballApi::Fixtures::Fixture.last_n_by_league
+```
 
+[H2h](https://www.api-football.com/documentation#fixtures-h2h-requests)
+```
 FootballApi::Fixtures::H2h.all_by_team
+```
 
+[Fixture Statistics](https://www.api-football.com/documentation#fixtures-statistics-requests)
+```
 FootballApi::Fixtures::Statistic.all_by_fixture
+```
 
+[Fixtures Events](https://www.api-football.com/documentation#fixtures-events-requests)
+```
 FootballApi::Fixtures::Event.all_by_fixture
+```
 
+[Fixtures Lineups](https://www.api-football.com/documentation#fixtures-lineups-requests)
+```
 FootballApi::Fixtures::Lineup.all_by_fixture
+```
 
+[Predictions](https://www.api-football.com/documentation#predictions-requests)
+```
 FootballApi::Prediction.all_by_fixture
+```
 
+[Coachs](https://www.api-football.com/documentation#coachs-requests)
+```
 FootballApi::Coach.find
 FootballApi::Coach.all_by_team
 FootballApi::Coach.search
+```
 
+[Players Seasons](https://www.api-football.com/documentation#players-seasons-requests)
+```
 FootballApi::Players::Season.all
+```
 
+[Players Top Scorers](https://www.api-football.com/documentation#players-top-scorers-requests)
+```
 FootballApi::Players::TopScorer.all_by_league
+```
 
+[Players Search](https://www.api-football.com/documentation#players-search-requests)
+```
 FootballApi::Players::Search.all_by_name
+```
 
+[Players Squad](https://www.api-football.com/documentation#players-squad-requests)
+```
 FootballApi::Players::Squad.all_by_team_and_season
+```
 
+[Players Statistics Seasons](https://www.api-football.com/documentation#players-statistics-seasons-requests)
+```
 FootballApi::Players::StatisticsSeason.all_by_player
 FootballApi::Players::StatisticsSeason.all_by_player_and_season
 FootballApi::Players::StatisticsSeason.all_by_team_and_season
+```
 
+[Players Statistics Fixtures](https://www.api-football.com/documentation#players-statistics-fixtures-requests)
+```
 FootballApi::Players::StatisticsFixture.by_fixture
+```
 
+[Transfers](https://www.api-football.com/documentation#transfers-requests)
+```
 FootballApi::Transfer.all_by_player
 FootballApi::Transfer.all_by_team
+```
 
+[Trophies](https://www.api-football.com/documentation#trophies-requests)
+```
 FootballApi::Trophey.all_by_player
 FootballApi::Trophey.all_by_coach
+```
 
+[Sidelined](https://www.api-football.com/documentation#sidelined-requests)
+```
 FootballApi::Sideline.all_by_player
 FootballApi::Sideline.all_by_coach
+```
 
+[Odds Bookmakers](https://www.api-football.com/documentation#odds-bookmakers-requests)
+```
 FootballApi::Odds::Bookmaker.all
 FootballApi::Odds::Bookmaker.find
+```
 
+[Odds Labels](https://www.api-football.com/documentation#odds-labels-requests)
+```
 FootballApi::Odds::Label.all
 FootballApi::Odds::Label.find
+```
 
+[Odds Mapping](https://www.api-football.com/documentation#odds-mapping-requests)
+```
 FootballApi::Odds::Mapping.all
+```
 
+[Odds](https://www.api-football.com/documentation#odds-odds-requests)
+```
 FootballApi::Odds::Odd.all_by_fixture
 FootballApi::Odds::Odd.all_by_date
 FootballApi::Odds::Odd.all_by_date_and_bookmaker
@@ -129,11 +216,7 @@ FootballApi::Odds::Odd.all_by_fixture_and_label
 FootballApi::Odds::Odd.all_by_league
 FootballApi::Odds::Odd.all_by_league_and_bookmaker
 FootballApi::Odds::Odd.all_by_league_and_label
-
-
-## TODO
-
-Add spec examples.
+```
 
 ## Development
 
@@ -143,5 +226,5 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/football_api.
+Bug reports and pull requests are welcome on GitHub at https://github.com/radkomih/football_api.
 
