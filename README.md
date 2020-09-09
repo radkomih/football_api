@@ -1,6 +1,6 @@
 # FootballApi
 
-API client for https://www.api-football.com - v2.3.9
+API client for https://www.api-football.com - v2.3.9 (current)
 
 ## Installation
 
