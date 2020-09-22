@@ -1,0 +1,22 @@
+{
+  "api": {
+    "results": 1,
+    "transfers": [
+      {
+        "player_id": 19018,
+        "player_name": "Timothy Evans Fosu-Mensah",
+        "transfer_date": "2019-07-01",
+        "type": null,
+        "team_in": {
+          "team_id": 33,
+          "team_name": "Manchester United"
+        },
+        "team_out": {
+          "team_id": 36,
+          "team_name": "Fulham"
+        },
+        "lastUpdate": 1561726193
+      }
+    ]
+  }
+}

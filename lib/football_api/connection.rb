@@ -25,11 +25,11 @@ module FootballApi
           .parse(response.read_body)
           .dig('api')
 
-        raise json_response['error'] unless json_response['error'].nil?
+        raise StandardError.new(json_response['error']) unless json_response['error'].nil?
 
         json_response
       else
-        raise response.read_body
+        raise StandardError.new(response.read_body)
       end
     end
   end

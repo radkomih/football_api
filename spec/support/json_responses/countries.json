@@ -1,0 +1,22 @@
+{
+  "api": {
+    "results": 62,
+    "countries": [
+      {
+        "country": "Algeria",
+        "code": "DZ",
+        "flag": "https://media.api-sports.io/flags/dz.svg"
+      },
+      {
+        "country": "Argentina",
+        "code": "AR",
+        "flag": "https://media.api-sports.io/flags/ar.svg"
+      },
+      {
+        "country": "Australia",
+        "code": "AU",
+        "flag": "https://media.api-sports.io/flags/au.svg"
+      }
+    ]
+  }
+}

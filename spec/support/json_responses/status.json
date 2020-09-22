@@ -1,0 +1,15 @@
+{
+  "api": {
+    "results": 1,
+    "status": {
+      "user": "XXXXXXX",
+      "email": "XXXXXX@XXXX.com",
+      "plan": "Mega",
+      "token": "XXXXXXXXXXXXXXXXXXXXXXXXX",
+      "active": "Yes",
+      "subscription_end": "2019-12-27T00:00:00+00:00",
+      "requests": 43674,
+      "requests_limit_day": 150000
+    }
+  }
+}
