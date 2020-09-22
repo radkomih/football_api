@@ -16,7 +16,7 @@ module FootballApi
       private
 
       def fetch(ident = nil, **options)
-        path = resource_path || [namespace, resource.downcase]
+        path = resource_path || [namespace, resource.downcase].compact
         uri = [path, ident].compact.join('/')
         query_params = build_params(options)
         uri += query_params if query_params

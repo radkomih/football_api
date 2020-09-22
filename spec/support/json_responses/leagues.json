@@ -1,0 +1,34 @@
+{
+  "api": {
+    "results": 970,
+    "leagues": [
+      {
+        "league_id": 1,
+        "name": "World Cup",
+        "type": "Cup",
+        "country": "World",
+        "country_code": null,
+        "season": 2018,
+        "season_start": "2018-06-14",
+        "season_end": "2018-07-15",
+        "logo": "https://media.api-sports.io/football/leagues/1.png",
+        "flag": null,
+        "standings": 1,
+        "is_current": 1,
+        "coverage": {
+          "standings": true,
+          "fixtures": {
+            "events": true,
+            "lineups": true,
+            "statistics": true,
+            "players_statistics": false
+          },
+          "players": true,
+          "topScorers": true,
+          "predictions": true,
+          "odds": false
+        }
+      }
+    ]
+  }
+}
