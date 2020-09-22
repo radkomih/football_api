@@ -1,0 +1,47 @@
+{
+  "api": {
+    "results": 1,
+    "standings": [
+      [
+        {
+          "rank": 1,
+          "team_id": 85,
+          "teamName": "Paris Saint Germain",
+          "logo": "https://media.api-sports.io/football/teams/85.png",
+          "group": "Ligue 1",
+          "forme": "DLWLL",
+          "status": "same",
+          "description": "Promotion - Champions League (Group Stage)",
+          "all": {
+            "matchsPlayed": 35,
+            "win": 27,
+            "draw": 4,
+            "lose": 4,
+            "goalsFor": 98,
+            "goalsAgainst": 31
+          },
+          "home": {
+            "matchsPlayed": 18,
+            "win": 16,
+            "draw": 2,
+            "lose": 0,
+            "goalsFor": 59,
+            "goalsAgainst": 10
+          },
+          "away": {
+            "matchsPlayed": 17,
+            "win": 11,
+            "draw": 2,
+            "lose": 4,
+            "goalsFor": 39,
+            "goalsAgainst": 21
+          },
+          "goalsDiff": 67,
+          "points": 85,
+          "lastUpdate": "2019-05-04"
+        }
+      ]
+    ]
+  }
+}
+

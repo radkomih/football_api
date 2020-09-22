@@ -1,0 +1,21 @@
+{
+  "api": {
+    "results": 5,
+    "teams": [
+      {
+        "team_id": 541,
+        "name": "Real Madrid",
+        "code": null,
+        "logo": "https://media.api-sports.io/football/teams/541.png",
+        "is_national": false,
+        "country": "Spain",
+        "founded": 1902,
+        "venue_name": "Estadio Santiago Bernabéu",
+        "venue_surface": "grass",
+        "venue_address": "Avenida de Concha Espina 1, Chamartín",
+        "venue_city": "Madrid",
+        "venue_capacity": 85454
+      }
+    ]
+  }
+}
