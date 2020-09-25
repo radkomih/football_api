@@ -132,6 +132,11 @@ ___
 
 [Standings](https://www.api-football.com/documentation#standings-requests)
 
+| Parameter | Type    | Required | Description |
+|-----------|---------|----------|-------------|
+| league_id | integer | true | Fails if field contains anything other than an integer |
+
+
 ```
 FootballApi::Standing.all_by_league
 ```
@@ -199,6 +204,10 @@ ___
 
 [Predictions](https://www.api-football.com/documentation#predictions-requests)
 
+|Parameter  | Type | Required | Description|
+|-----------|------|----------|------------|
+|fixture_id | integer | true | Fails if field contains anything other than an integer|
+
 ```
 FootballApi::Prediction.all_by_fixture
 ```
@@ -207,6 +216,13 @@ ___
 
 
 [Coachs](https://www.api-football.com/documentation#coachs-requests)
+
+|Parameter | Type | Required | Description|
+|----------|------|----------|------------|
+|coach_id | integer | false | Fails if field contains anything other than an integer|
+|team_id | integer  | false | Fails if field contains anything other than an integer|
+|search | string | false | 3 characters minimum | Fails if field has anything other than alphabetic characters|
+
 
 ```
 FootballApi::Coach.find

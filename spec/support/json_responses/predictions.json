@@ -1,0 +1,291 @@
+{
+  "api": {
+    "results": 1,
+    "predictions": [
+      {
+        "match_winner": "1",
+        "under_over": null,
+        "goals_home": "-3.5",
+        "goals_away": "-1.5",
+        "advice": "Winner : Paris Saint Germain",
+        "winning_percent": {
+          "home": "50%",
+          "draws": "50%",
+          "away": "0%"
+        },
+        "teams": {
+          "home": {
+            "team_id": 85,
+            "team_name": "Paris Saint Germain",
+            "last_5_matches": {
+              "forme": "75%",
+              "att": "71%",
+              "def": "86%",
+              "goals": 10,
+              "goals_avg": 2.5,
+              "goals_against": 2,
+              "goals_against_avg": 0.5
+            },
+            "all_last_matches": {
+              "matchs": {
+                "matchsPlayed": {
+                  "home": 3,
+                  "away": 2,
+                  "total": 5
+                },
+                "wins": {
+                  "home": 3,
+                  "away": 1,
+                  "total": 4
+                },
+                "draws": {
+                  "home": 0,
+                  "away": 0,
+                  "total": 0
+                },
+                "loses": {
+                  "home": 0,
+                  "away": 1,
+                  "total": 1
+                }
+              },
+              "goals": {
+                "goalsFor": {
+                  "home": 8,
+                  "away": 3,
+                  "total": 11
+                },
+                "goalsAgainst": {
+                  "home": 0,
+                  "away": 2,
+                  "total": 2
+                }
+              },
+              "goalsAvg": {
+                "goalsFor": {
+                  "home": "2.7",
+                  "away": "1.5",
+                  "total": "2.2"
+                },
+                "goalsAgainst": {
+                  "home": "0.0",
+                  "away": "1.0",
+                  "total": "0.4"
+                }
+              }
+            },
+            "last_h2h": {
+              "played": {
+                "home": 4,
+                "away": 3,
+                "total": 7
+              },
+              "wins": {
+                "home": 3,
+                "away": 1,
+                "total": 4
+              },
+              "draws": {
+                "home": 1,
+                "away": 1,
+                "total": 2
+              },
+              "loses": {
+                "home": 0,
+                "away": 1,
+                "total": 1
+              }
+            }
+          },
+          "away": {
+            "team_id": 95,
+            "team_name": "Strasbourg",
+            "last_5_matches": {
+              "forme": "25%",
+              "att": "21%",
+              "def": "64%",
+              "goals": 3,
+              "goals_avg": 0.75,
+              "goals_against": 5,
+              "goals_against_avg": 1.25
+            },
+            "all_last_matches": {
+              "matchs": {
+                "matchsPlayed": {
+                  "home": 3,
+                  "away": 2,
+                  "total": 5
+                },
+                "wins": {
+                  "home": 0,
+                  "away": 0,
+                  "total": 0
+                },
+                "draws": {
+                  "home": 2,
+                  "away": 1,
+                  "total": 3
+                },
+                "loses": {
+                  "home": 1,
+                  "away": 1,
+                  "total": 2
+                }
+              },
+              "goals": {
+                "goalsFor": {
+                  "home": 3,
+                  "away": 0,
+                  "total": 3
+                },
+                "goalsAgainst": {
+                  "home": 5,
+                  "away": 1,
+                  "total": 6
+                }
+              },
+              "goalsAvg": {
+                "goalsFor": {
+                  "home": "1.0",
+                  "away": "0.0",
+                  "total": "0.6"
+                },
+                "goalsAgainst": {
+                  "home": "1.7",
+                  "away": "0.5",
+                  "total": "1.2"
+                }
+              }
+            },
+            "last_h2h": {
+              "played": {
+                "home": 3,
+                "away": 4,
+                "total": 7
+              },
+              "wins": {
+                "home": 1,
+                "away": 0,
+                "total": 1
+              },
+              "draws": {
+                "home": 1,
+                "away": 1,
+                "total": 2
+              },
+              "loses": {
+                "home": 1,
+                "away": 3,
+                "total": 4
+              }
+            }
+          }
+        },
+        "h2h": [
+          {
+            "fixture_id": 35755,
+            "league_id": 22,
+            "league": {
+              "name": "Ligue 1",
+              "country": "France",
+              "logo": "https://media.api-sports.io/football/leagues/22.svg",
+              "flag": "https://media.api-sports.io/flags/fr.svg"
+            },
+            "event_date": "2017-12-02T16:00:00+00:00",
+            "event_timestamp": 1512230400,
+            "firstHalfStart": 1512230400,
+            "secondHalfStart": 1512234000,
+            "round": "Regular Season - 16",
+            "status": "Match Finished",
+            "statusShort": "FT",
+            "elapsed": 90,
+            "venue": "Stade de la Meinau (Strasbourg)",
+            "referee": "R. Buquet",
+            "homeTeam": {
+              "team_id": 95,
+              "team_name": "Strasbourg",
+              "logo": "https://media.api-sports.io/football/teams/95.png"
+            },
+            "awayTeam": {
+              "team_id": 85,
+              "team_name": "Paris Saint Germain",
+              "logo": "https://media.api-sports.io/football/teams/85.png"
+            },
+            "goalsHomeTeam": 2,
+            "goalsAwayTeam": 1,
+            "score": {
+              "halftime": "1-1",
+              "fulltime": "2-1",
+              "extratime": null,
+              "penalty": null
+            }
+          },
+          {
+            "fixture_id": 121334,
+            "league_id": 434,
+            "league": {
+              "name": "Coupe de la Ligue",
+              "country": "France",
+              "logo": null,
+              "flag": "https://media.api-sports.io/flags/fr.svg"
+            },
+            "event_date": "2017-12-13T20:05:00+00:00",
+            "event_timestamp": 1513195500,
+            "firstHalfStart": 1513195500,
+            "secondHalfStart": 1513199100,
+            "round": "8th Finals",
+            "status": "Match Finished",
+            "statusShort": "FT",
+            "elapsed": 90,
+            "venue": "Stade de la Meinau (Strasbourg)",
+            "referee": null,
+            "homeTeam": {
+              "team_id": 95,
+              "team_name": "Strasbourg",
+              "logo": "https://media.api-sports.io/football/teams/95.png"
+            },
+            "awayTeam": {
+              "team_id": 85,
+              "team_name": "Paris Saint Germain",
+              "logo": "https://media.api-sports.io/football/teams/85.png"
+            },
+            "goalsHomeTeam": 2,
+            "goalsAwayTeam": 4,
+            "score": {
+              "halftime": "1-2",
+              "fulltime": "2-4",
+              "extratime": null,
+              "penalty": null
+            }
+          }
+        ],
+        "comparison": {
+          "forme": {
+            "home": "75%",
+            "away": "25%"
+          },
+          "att": {
+            "home": "77%",
+            "away": "23%"
+          },
+          "def": {
+            "home": "71%",
+            "away": "29%"
+          },
+          "fish_law": {
+            "home": "0%",
+            "away": "0%"
+          },
+          "h2h": {
+            "home": "85%",
+            "away": "15%"
+          },
+          "goals_h2h": {
+            "home": "67%",
+            "away": "33%"
+          }
+        }
+      }
+    ]
+}
+}
