@@ -18,14 +18,16 @@ RSpec.configure do |config|
   end
 
   config.before(:each) do
-    @api_host = 'https://v2.api-football.com'
+    uri = URI('https://v2.api-football.com')
+    @api_host = uri.to_s
     @api_key = 'XXXXXXXXXXXXXXXXXXXXXXXXX'
+
     @headers = {
       'Accept' => '*/*',
       'Accept-Encoding' => 'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
       'User-Agent' => 'Ruby',
-      'Host' => @api_host.sub('https://', ''),
-      'X-Rapidapi-Host' => @api_host,
+      'Host' => uri.host,
+      'X-Rapidapi-Host' => uri.host,
       'X-Rapidapi-Key' => @api_key
     }
 
