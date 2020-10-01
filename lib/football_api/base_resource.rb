@@ -20,6 +20,7 @@ module FootballApi
         uri = [path, ident].compact.join('/')
         query_params = build_params(options)
         uri += query_params if query_params
+        uri = URI.encode(uri)
         format_result(get(uri))
       end
 

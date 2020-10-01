@@ -12,9 +12,7 @@ module FootballApi
       end
 
       def search(name, **options)
-        search_term = URI.encode(name)
-
-        fetch("search/#{search_term}", options)
+        fetch("search/#{name}", options)
       end
 
       private
