@@ -1,0 +1,27 @@
+{
+  "api": {
+    "results": 25,
+    "sidelined": [
+      {
+        "type": "Groin/Pelvis Injury",
+        "start": "11/10/19",
+        "end": "15/11/19"
+      },
+      {
+        "type": "Ankle/Foot Injury",
+        "start": "01/08/19",
+        "end": "23/08/19"
+      },
+      {
+        "type": "Suspended",
+        "start": "15/05/19",
+        "end": "27/05/19"
+      },
+      {
+        "type": "Ankle/Foot Injury",
+        "start": "24/01/19",
+        "end": "20/04/19"
+      }
+    ]
+  }
+}

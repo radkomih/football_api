@@ -1,2 +1,9 @@
-.rspec_status
+# bundler
+.bundle
 Gemfile.lock
+
+# rspec
+.rspec_status
+
+# For MacOS:
+.DS_Store
